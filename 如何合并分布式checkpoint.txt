@@ -1,0 +1,4 @@
+合并：
+python -m verl.model_merger merge  --backend fsdp  --local_dir checkpoints/TTRL-verl/AIME-TTT-Qwen2.5-Math-1.5B/1121/TTRL-Len@3k-grpo-172502/global_step_240/actor  --target_dir checkpoints/TTRL-verl/AIME-TTT-Qwen2.5-Math-1.5B/1121/TTRL-Len@3k-grpo-172502/global_step_240/actor/merged_hf_model
+
+local_dir  target_dir改改就好。最后merged_hf_model结尾，以让csv的log能够自动识别status命名
