@@ -1414,8 +1414,8 @@ class RayPPOTrainer:
         #     self._covalidate(temp=t) # 反正是不同模型一样的， 不同时验证了就
         # import os
         # os._exit(0)
-        self._covalidate()
-        import pdb;pdb.set_trace()
+        # self._covalidate()
+        # import pdb;pdb.set_trace()
         # debug ed
         
         if self.val_reward_fn is not None and self.config.trainer.get("val_before_train", True):
